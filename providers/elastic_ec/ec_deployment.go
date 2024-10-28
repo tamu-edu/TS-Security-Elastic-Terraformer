@@ -12,13 +12,11 @@ type EcDeploymentGenerator struct {
 }
 
 func (g *EcDeploymentGenerator) InitResources() error {
-	// Fetch all deployments
 	res, err := deploymentapi.List(deploymentapi.ListParams{API: g.Client})
 	if err != nil {
 		return err
 	}
 
-	// Loop through each deployment and add it as a Terraform resource
 	for _, deployment := range res.Deployments {
 		resource := terraformutils.NewSimpleResource(
 			deployment.ID,

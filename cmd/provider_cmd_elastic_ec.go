@@ -2,5 +2,5 @@
 package cmd
 
 import (
-	_ "path/to/your/terraformer/providers/elastic_ec"
+	_ "..//providers/elastic_ec"
 )
