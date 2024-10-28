@@ -21,7 +21,7 @@ import (
 
 	"google.golang.org/api/pubsub/v1"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
 )
 
 var pubsubAllowEmptyValues = []string{""}

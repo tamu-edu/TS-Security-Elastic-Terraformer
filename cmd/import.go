@@ -21,14 +21,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils/terraformerstring"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils/terraformerstring"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils/providerwrapper"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils/providerwrapper"
 
 	"github.com/spf13/pflag"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils/terraformoutput"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils/terraformoutput"
 
 	"github.com/spf13/cobra"
 )

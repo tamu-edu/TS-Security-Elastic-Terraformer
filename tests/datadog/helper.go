@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	datadog_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/datadog"
+	datadog_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/datadog"
 )
 
 var (

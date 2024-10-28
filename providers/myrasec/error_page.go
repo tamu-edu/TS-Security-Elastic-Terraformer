@@ -5,20 +5,17 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	mgo "github.com/Myra-Security-GmbH/myrasec-go/v2"
 )
 
-//
 // ErrorPageGenerator
-//
 type ErrorPageGenerator struct {
 	MyrasecService
 }
 
-//
 // createErrorPageResources
-//
 func (g *ErrorPageGenerator) createErrorPageResources(api *mgo.API, domain mgo.Domain, wg *sync.WaitGroup) error {
 	defer wg.Done()
 
@@ -62,9 +59,7 @@ func (g *ErrorPageGenerator) createErrorPageResources(api *mgo.API, domain mgo.D
 	return nil
 }
 
-//
 // InitResources
-//
 func (g *ErrorPageGenerator) InitResources() error {
 	wg := sync.WaitGroup{}
 

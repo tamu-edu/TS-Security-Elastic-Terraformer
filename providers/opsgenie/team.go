@@ -6,7 +6,7 @@ import (
 
 	"github.com/opsgenie/opsgenie-go-sdk-v2/team"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
 )
 
 type TeamGenerator struct {

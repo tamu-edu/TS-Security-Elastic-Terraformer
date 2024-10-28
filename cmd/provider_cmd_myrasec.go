@@ -1,14 +1,13 @@
 package cmd
 
 import (
-	myrasec_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/myrasec"
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	myrasec_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/myrasec"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/spf13/cobra"
 )
 
-//
 // newCmdMyrasecImporter
-//
 func newCmdMyrasecImporter(options ImportOptions) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "myrasec",
@@ -29,9 +28,7 @@ func newCmdMyrasecImporter(options ImportOptions) *cobra.Command {
 	return cmd
 }
 
-//
 // newMyrasecProvider
-//
 func newMyrasecProvider() terraformutils.ProviderGenerator {
 	return &myrasec_terraforming.MyrasecProvider{}
 }

@@ -17,7 +17,8 @@ package launchdarkly
 import (
 	"context"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	launchdarkly "github.com/launchdarkly/api-client-go"
 )
 

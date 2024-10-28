@@ -5,20 +5,17 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	mgo "github.com/Myra-Security-GmbH/myrasec-go/v2"
 )
 
-//
 // MaintenanceGenerator
-//
 type MaintenanceGenerator struct {
 	MyrasecService
 }
 
-//
 // createMaintenanceResources
-//
 func (g *MaintenanceGenerator) createMaintenanceResources(api *mgo.API, domainId int, vhost mgo.VHost, wg *sync.WaitGroup) error {
 	defer wg.Done()
 
@@ -59,9 +56,7 @@ func (g *MaintenanceGenerator) createMaintenanceResources(api *mgo.API, domainId
 	return nil
 }
 
-//
 // InitResources
-//
 func (g *MaintenanceGenerator) InitResources() error {
 	wg := sync.WaitGroup{}
 

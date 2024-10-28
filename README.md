@@ -1,8 +1,8 @@
 # Terraformer
 
-[![tests](https://github.com/GoogleCloudPlatform/terraformer/actions/workflows/test.yml/badge.svg)](https://github.com/GoogleCloudPlatform/terraformer/actions/workflows/test.yml)
-[![linter](https://github.com/GoogleCloudPlatform/terraformer/actions/workflows/linter.yml/badge.svg)](https://github.com/GoogleCloudPlatform/terraformer/actions/workflows/linter.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/GoogleCloudPlatform/terraformer)](https://goreportcard.com/report/github.com/GoogleCloudPlatform/terraformer)
+[![tests](github.com/tamu-edu/TS-Security-Elastic-Terraformer/actions/workflows/test.yml/badge.svg)](github.com/tamu-edu/TS-Security-Elastic-Terraformer/actions/workflows/test.yml)
+[![linter](github.com/tamu-edu/TS-Security-Elastic-Terraformer/actions/workflows/linter.yml/badge.svg)](github.com/tamu-edu/TS-Security-Elastic-Terraformer/actions/workflows/linter.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tamu-edu/TS-Security-Elastic-Terraformer)](https://goreportcard.com/report/github.com/tamu-edu/TS-Security-Elastic-Terraformer)
 [![AUR package](https://img.shields.io/aur/version/terraformer)](https://aur.archlinux.org/packages/terraformer/)
 [![Homebrew](https://img.shields.io/badge/dynamic/json.svg?url=https://formulae.brew.sh/api/formula/terraformer.json&query=$.versions.stable&label=homebrew)](https://formulae.brew.sh/formula/terraformer)
 
@@ -232,20 +232,20 @@ This installs all providers, set `PROVIDER` to one of `google`, `aws` or `kubern
 * Linux
 ```
 export PROVIDER=all
-curl -LO "https://github.com/GoogleCloudPlatform/terraformer/releases/download/$(curl -s https://api.github.com/repos/GoogleCloudPlatform/terraformer/releases/latest | grep tag_name | cut -d '"' -f 4)/terraformer-${PROVIDER}-linux-amd64"
+curl -LO "github.com/tamu-edu/TS-Security-Elastic-Terraformer/releases/download/$(curl -s https://api.github.com/repos/GoogleCloudPlatform/terraformer/releases/latest | grep tag_name | cut -d '"' -f 4)/terraformer-${PROVIDER}-linux-amd64"
 chmod +x terraformer-${PROVIDER}-linux-amd64
 sudo mv terraformer-${PROVIDER}-linux-amd64 /usr/local/bin/terraformer
 ```
 * MacOS
 ```
 export PROVIDER=all
-curl -LO "https://github.com/GoogleCloudPlatform/terraformer/releases/download/$(curl -s https://api.github.com/repos/GoogleCloudPlatform/terraformer/releases/latest | grep tag_name | cut -d '"' -f 4)/terraformer-${PROVIDER}-darwin-amd64"
+curl -LO "github.com/tamu-edu/TS-Security-Elastic-Terraformer/releases/download/$(curl -s https://api.github.com/repos/GoogleCloudPlatform/terraformer/releases/latest | grep tag_name | cut -d '"' -f 4)/terraformer-${PROVIDER}-darwin-amd64"
 chmod +x terraformer-${PROVIDER}-darwin-amd64
 sudo mv terraformer-${PROVIDER}-darwin-amd64 /usr/local/bin/terraformer
 ```
 * Windows
 1. Install Terraform - https://www.terraform.io/downloads
-2. Download exe file for required provider from here - https://github.com/GoogleCloudPlatform/terraformer/releases
+2. Download exe file for required provider from here - github.com/tamu-edu/TS-Security-Elastic-Terraformer/releases
 3. Add the exe file path to path variable
 
 **From source**

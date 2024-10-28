@@ -14,7 +14,7 @@
 
 package openstack
 
-import "github.com/GoogleCloudPlatform/terraformer/terraformutils"
+import "github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
 
 type OpenStackService struct { //nolint
 	terraformutils.Service

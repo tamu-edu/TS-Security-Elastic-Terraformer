@@ -17,7 +17,8 @@ package fastly
 import (
 	"log"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/fastly/go-fastly/v7/fastly"
 )
 

@@ -15,7 +15,8 @@
 package equinixmetal
 
 import (
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/packethost/packngo"
 )
 

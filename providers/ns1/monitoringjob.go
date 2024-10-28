@@ -15,10 +15,12 @@
 package ns1
 
 import (
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
-	ns1 "gopkg.in/ns1/ns1-go.v2/rest"
 	"net/http"
 	"time"
+
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
+	ns1 "gopkg.in/ns1/ns1-go.v2/rest"
 )
 
 type MonitoringJobGenerator struct {

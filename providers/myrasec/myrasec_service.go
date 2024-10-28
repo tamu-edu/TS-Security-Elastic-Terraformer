@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	mgo "github.com/Myra-Security-GmbH/myrasec-go/v2"
 )
 

@@ -14,9 +14,10 @@
 package cmd
 
 import (
-	opal_terraformer "github.com/GoogleCloudPlatform/terraformer/providers/opal"
+	opal_terraformer "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/opal"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/spf13/cobra"
 )
 

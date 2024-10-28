@@ -7,7 +7,7 @@ import (
 
 	"github.com/opsgenie/opsgenie-go-sdk-v2/service"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
 )
 
 type ServiceGenerator struct {

@@ -1,4 +1,4 @@
-module github.com/GoogleCloudPlatform/terraformer
+module github.com/tamu-edu/TS-Security-Elastic-Terraformer
 
 go 1.22
 

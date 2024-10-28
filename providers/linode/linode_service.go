@@ -17,7 +17,8 @@ package linode
 import (
 	"net/http"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/linode/linodego"
 	"golang.org/x/oauth2"
 )

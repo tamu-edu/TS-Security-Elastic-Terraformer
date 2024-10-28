@@ -20,8 +20,8 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/GoogleCloudPlatform/terraformer/cmd"
-	aws_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/aws"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/cmd"
+	aws_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/aws"
 )
 
 func main() {

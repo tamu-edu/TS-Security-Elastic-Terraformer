@@ -20,9 +20,10 @@ import (
 	"strconv"
 	"strings"
 
-	keycloak_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/keycloak"
+	keycloak_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/keycloak"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/spf13/cobra"
 )
 

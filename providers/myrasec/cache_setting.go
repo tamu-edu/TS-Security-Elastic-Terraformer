@@ -5,20 +5,17 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	mgo "github.com/Myra-Security-GmbH/myrasec-go/v2"
 )
 
-//
 // CacheSettingGenerator
-//
 type CacheSettingGenerator struct {
 	MyrasecService
 }
 
-//
 // createCacheSettingResources
-//
 func (g *CacheSettingGenerator) createCacheSettingResources(api *mgo.API, domainId int, vhost mgo.VHost, wg *sync.WaitGroup) error {
 	defer wg.Done()
 
@@ -61,9 +58,7 @@ func (g *CacheSettingGenerator) createCacheSettingResources(api *mgo.API, domain
 	return nil
 }
 
-//
 // InitResources
-//
 func (g *CacheSettingGenerator) InitResources() error {
 	wg := sync.WaitGroup{}
 

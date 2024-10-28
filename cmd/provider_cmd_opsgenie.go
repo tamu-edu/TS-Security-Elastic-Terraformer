@@ -3,8 +3,8 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	opsgenie_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/opsgenie"
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	opsgenie_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/opsgenie"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
 )
 
 func newCmdOpsgenieImporter(options ImportOptions) *cobra.Command {

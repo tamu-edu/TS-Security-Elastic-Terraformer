@@ -17,7 +17,8 @@ package ibm
 import (
 	"os"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	bluemix "github.com/IBM-Cloud/bluemix-go"
 	"github.com/IBM-Cloud/bluemix-go/api/certificatemanager"
 	"github.com/IBM-Cloud/bluemix-go/api/resource/resourcev1/catalog"

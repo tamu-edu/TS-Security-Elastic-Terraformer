@@ -17,8 +17,9 @@ package commercetools
 import (
 	"context"
 
-	"github.com/GoogleCloudPlatform/terraformer/providers/commercetools/connectivity"
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/commercetools/connectivity"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/labd/commercetools-go-sdk/commercetools"
 )
 

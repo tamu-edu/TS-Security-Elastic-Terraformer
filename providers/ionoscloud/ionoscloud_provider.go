@@ -18,10 +18,11 @@ import (
 	"errors"
 	"os"
 
-	"github.com/GoogleCloudPlatform/terraformer/providers/ionoscloud/helpers"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/ionoscloud/helpers"
+
 	ionoscloud "github.com/ionos-cloud/sdk-go/v6"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
 )
 
 type IonosCloudProvider struct { //nolint

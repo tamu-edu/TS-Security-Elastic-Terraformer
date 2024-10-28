@@ -17,7 +17,8 @@ package github
 import (
 	"context"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/google/go-github/v35/github"
 	"golang.org/x/oauth2"
 )

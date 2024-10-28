@@ -4,8 +4,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/GoogleCloudPlatform/terraformer/providers/ionoscloud/helpers"
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/ionoscloud/helpers"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	dbaas "github.com/ionos-cloud/sdk-go-dbaas-postgres"
 )
 

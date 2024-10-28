@@ -15,7 +15,8 @@
 package newrelic
 
 import (
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	newrelic "github.com/newrelic/newrelic-client-go/newrelic"
 )
 

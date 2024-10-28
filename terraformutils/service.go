@@ -18,7 +18,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils/providerwrapper"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils/providerwrapper"
 )
 
 type ServiceGenerator interface {

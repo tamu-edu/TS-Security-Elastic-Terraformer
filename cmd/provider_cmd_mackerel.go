@@ -15,8 +15,9 @@
 package cmd
 
 import (
-	mackerel_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/mackerel"
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	mackerel_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/mackerel"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/spf13/cobra"
 )
 

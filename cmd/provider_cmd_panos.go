@@ -19,8 +19,9 @@ import (
 	"reflect"
 	"strings"
 
-	panos_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/panos"
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	panos_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/panos"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/spf13/cobra"
 )
 

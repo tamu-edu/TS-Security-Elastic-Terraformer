@@ -5,20 +5,17 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	mgo "github.com/Myra-Security-GmbH/myrasec-go/v2"
 )
 
-//
 // RateLimitGenerator
-//
 type RatelimitGenerator struct {
 	MyrasecService
 }
 
-//
 // createRatelimitResources
-//
 func (g *RatelimitGenerator) createRatelimitResources(api *mgo.API, domainId int, vhost mgo.VHost, wg *sync.WaitGroup) error {
 	defer wg.Done()
 
@@ -59,9 +56,7 @@ func (g *RatelimitGenerator) createRatelimitResources(api *mgo.API, domainId int
 	return nil
 }
 
-//
 // InitResources
-//
 func (g *RatelimitGenerator) InitResources() error {
 	wg := sync.WaitGroup{}
 

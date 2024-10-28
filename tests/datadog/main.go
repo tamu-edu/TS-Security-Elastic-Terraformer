@@ -23,8 +23,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/GoogleCloudPlatform/terraformer/cmd"
-	datadog_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/datadog"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/cmd"
+	datadog_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/datadog"
 )
 
 func main() {

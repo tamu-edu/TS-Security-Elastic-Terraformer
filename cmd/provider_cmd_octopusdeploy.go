@@ -1,9 +1,10 @@
 package cmd
 
 import (
-	octopusdeploy_terraforming "github.com/GoogleCloudPlatform/terraformer/providers/octopusdeploy"
+	octopusdeploy_terraforming "github.com/tamu-edu/TS-Security-Elastic-Terraformer/providers/octopusdeploy"
 
-	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/tamu-edu/TS-Security-Elastic-Terraformer/terraformutils"
+
 	"github.com/spf13/cobra"
 )
 
