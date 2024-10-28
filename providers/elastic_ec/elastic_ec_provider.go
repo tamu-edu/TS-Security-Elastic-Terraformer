@@ -2,13 +2,17 @@ package elastic_ec
 
 import (
 	"errors"
+	"net/http"
 
 	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
+	"github.com/elastic/cloud-sdk-go/pkg/api"
+	"github.com/elastic/cloud-sdk-go/pkg/auth"
 )
 
 type ElasticECProvider struct {
 	terraformutils.Provider
 	apiKey string
+	client *api.API
 }
 
 func (p *ElasticECProvider) Init(args []string) error {
@@ -16,6 +20,10 @@ func (p *ElasticECProvider) Init(args []string) error {
 		return errors.New("API key required")
 	}
 	p.apiKey = args[0]
+	p.client = api.NewAPI(api.Config{
+		Client:     new(http.Client),
+		AuthWriter: auth.APIKey(p.apiKey),
+	})
 	return nil
 }
 
@@ -27,16 +35,13 @@ func (p *ElasticECProvider) InitService(serviceName string, verbose bool) (terra
 	switch serviceName {
 	case "ec_deployment":
 		return &EcDeploymentGenerator{
-			ApiKey: p.apiKey,
+			Client: p.client,
 		}, nil
-	// Add more services as needed
 	default:
 		return nil, errors.New("unsupported service: " + serviceName)
 	}
 }
 
 func (p *ElasticECProvider) GetResourceConnections() map[string][]string {
-	return map[string][]string{
-		// Define connections here if necessary
-	}
+	return map[string][]string{}
 }
