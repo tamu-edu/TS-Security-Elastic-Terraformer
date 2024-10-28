@@ -1,6 +1,8 @@
 package elastic_ec
 
 import (
+	"errors"
+
 	"github.com/GoogleCloudPlatform/terraformer/terraformutils"
 )
 
@@ -10,7 +12,10 @@ type ElasticECProvider struct {
 }
 
 func (p *ElasticECProvider) Init(args []string) error {
-	p.apiKey = args[0] // Example for API key
+	if len(args) < 1 {
+		return errors.New("API key required")
+	}
+	p.apiKey = args[0]
 	return nil
 }
 
@@ -19,10 +24,19 @@ func (p *ElasticECProvider) GetName() string {
 }
 
 func (p *ElasticECProvider) InitService(serviceName string, verbose bool) (terraformutils.Service, error) {
-	// Initialize Elastic Cloud service and return specific resource generators
+	switch serviceName {
+	case "ec_deployment":
+		return &EcDeploymentGenerator{
+			ApiKey: p.apiKey,
+		}, nil
+	// Add more services as needed
+	default:
+		return nil, errors.New("unsupported service: " + serviceName)
+	}
 }
 
-// Define individual resource files, e.g., elastic_ec_deployment.go for ec_deployment
 func (p *ElasticECProvider) GetResourceConnections() map[string][]string {
-	return map[string][]string{} // Define relationships if necessary
+	return map[string][]string{
+		// Define connections here if necessary
+	}
 }
